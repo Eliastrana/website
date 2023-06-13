@@ -301,7 +301,8 @@ body {
   margin-bottom: 20px; /* Add spacing between the image and the signature */
   font-family: meshed_displayregular, serif;
   font-size: 260px;
-  color: #d2c8b2; /* Set the font color */
+  /*color: #d2c8b2; !* Set the font color *!*/
+  color: #dc0505;
   text-align: center; /* Center the text horizontally */
   padding: 50px; /* Add padding around the text */
   writing-mode: sideways-lr; /* Align the text sideways */
