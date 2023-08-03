@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photos</title>
+  <link rel="stylesheet" href="archive.css">
+</head>
+<body>
+<div class="signature" id="signature">
+  <div class="signature_text">
+    ARCHIVE
+  </div>
+  <img src="photos/panoramabil-removebg-preview.png" alt="Statue" class="photo">
+</div>
+
+<div class="image-grid">
+  <!-- Your images will be dynamically added here -->
+</div>
+
+<div class="overlay" id="overlay">
+  <span class="close-btn" onclick="closeOverlay()">&times;</span>
+  <img class="full-image" id="fullImage">
+  <span class="prev-btn" onclick="prevImage()">&lt;</span>
+  <span class="next-btn" onclick="nextImage()">&gt;</span>
+</div>
+
+<script src="archive.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url(backgroundimageBlurry.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.all-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  max-width: 100%;
+  height: auto;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.image-caption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.image-container:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+
