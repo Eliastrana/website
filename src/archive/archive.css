@@ -1,0 +1,109 @@
+/* styles.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: #FEFBEA;
+}
+
+.signature_text {
+  font-size: 7em;
+  font-family: Futura, serif;
+  font-style: italic;
+  color: #a6c9c9;
+  text-align: left;
+  padding: 20px;
+}
+
+.signature {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Put space between the items (text and image) */
+  width: 100%;
+  max-width: 800px; /* You can adjust the max-width as needed */
+  margin: 0 auto; /* Center the signature container */
+}
+
+.photo {
+  max-width: 50%; /* Adjust the width of the image column */
+  height: auto; /* Maintain the image aspect ratio */
+}
+
+.hidden {
+  display: none;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* Limit the height to 100% of the viewport height minus the height of .signature */
+  height: calc(100vh - 40px); /* Adjust '40px' to match the height of .signature */
+  overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+}
+
+.image-grid img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s ease; /* Add a transition for smooth animation */
+}
+
+.image-grid img:hover {
+  transform: scale(1.05); /* Scale up the image on hover */
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding-top: 20px;
+  align-items: center; /* Center the content vertically */
+  justify-content: center;
+}
+
+.full-image {
+  max-width: 95%;
+  max-height: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.close-btn {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.prev-btn,
+.next-btn {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
