@@ -9,6 +9,7 @@ const imageUrls = [
   'photos/badeklipp.jpeg',
   'photos/outfit.jpeg',
   'photos/lacrossePortrait.jpeg',
+  'photos/imm001_N1.jpeg'
 
   // Add more image URLs here
 ];

@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  background-image: url(backgroundimageBlurry.png);
+  background-image: url(img/backgroundimageBlurry.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
