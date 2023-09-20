@@ -9,9 +9,10 @@
       margin: 0;
       padding: 0;
       background-image: url('bakgrunn.png'); /* Replace with your background image URL */
-      background-size: 100% auto; /* Updated property */
+      background-size: cover;
       background-repeat: no-repeat;
-      background-attachment: fixed; /* Background is fixed when scrolling */
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
     }
 
     header {
@@ -31,6 +32,19 @@
 
     .image {
       margin: 10px;
+      max-width: 100%; /* Ensure images don't exceed their container width */
+    }
+
+
+    /* Media query for smaller screens (e.g., mobile) */
+    @media (max-width: 768px) {
+      body {
+        background-size: auto; /* Adjust background size for smaller screens */
+      }
+
+      h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+      }
     }
   </style>
 </head>
